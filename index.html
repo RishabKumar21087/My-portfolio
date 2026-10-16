@@ -3,219 +3,394 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website of Rishab Kumar Chowdhary — AI, software development, research and more.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rishab Kumar Chowdhary — Computer Science, AI, Machine Learning and Research">
   <title>Rishab Kumar Chowdhary | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="container navbar" aria-label="Main navigation">
-      <a href="#home" class="logo">Rishab<span>.</span></a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#personal">Beyond Work</a>
-        <a href="#contact" class="nav-contact">Let's Connect ↗</a>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home" class="hero container">
-      <div class="hero-content">
-        <p class="eyebrow">HELLO, I'M RISHAB</p>
-        <h1>Curious mind.<br><em>Thoughtful technology.</em></h1>
-        <p class="hero-description">
-          I'm Rishab Kumar Chowdhary, a Computer Science graduate
-          from IIIT Delhi, interested in artificial intelligence,
-          human-computer interaction, and building meaningful technology.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-dark">Explore My Work <span>↗</span></a>
-          <a href="#about" class="btn btn-outline">More About Me</a>
-        </div>
-        <div class="hero-meta">
-          <span>Based in India</span>
-          <span class="dot"></span>
-          <span>AI · Research · Development</span>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="portrait-placeholder">
-          <span>RC.</span>
-          <p>Replace this with your portrait</p>
-        </div>
-        <div class="portrait-caption">Always learning, always building.</div>
-      </div>
-    </section>
-
-    <section id="about" class="section section-alt">
-      <div class="container two-column">
-        <div>
-          <p class="eyebrow">01 / ABOUT ME</p>
-          <h2>Technology with<br><em>a human perspective.</em></h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            My journey in computer science has been driven by curiosity
-            about how technology can understand and improve human experiences.
-          </p>
-          <p>
-            From developing smartphone-based health applications to exploring
-            cognitive load through eye-tracking, I enjoy working at the
-            intersection of software engineering, artificial intelligence,
-            and human-centred research.
-          </p>
-          <p>
-            Outside academics, I'm interested in football, travel,
-            photography, and discovering new perspectives.
-          </p>
-          <a href="#contact" class="text-link">Get in touch ↗</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <p class="eyebrow">02 / EDUCATION</p>
-        <h2>My academic <em>journey.</em></h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">Undergraduate</div>
-            <div>
-              <h3>Indraprastha Institute of Information Technology Delhi</h3>
-              <p class="subtitle">Bachelor of Technology · Computer Science and Engineering</p>
-              <p>Foundation in programming, software development, computer systems and interdisciplinary technology.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Next Chapter</div>
-            <div>
-              <h3>University of Technology Sydney</h3>
-              <p class="subtitle">Master of Artificial Intelligence · Planned</p>
-              <p>Academic interests include machine learning, intelligent systems, and human-centred AI.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <div class="section-top">
-          <div>
-            <p class="eyebrow">03 / SELECTED WORK</p>
-            <h2>Things I've <em>built.</em></h2>
-          </div>
-          <p>A selection of academic projects and technical explorations.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-art art-one"><span>01 / HEALTH TECH</span><strong>AirPulse</strong></div>
-            <div class="project-info">
-              <div class="tags"><span>Android</span><span>Kotlin</span><span>Signal Processing</span></div>
-              <h3>AirPulse — Mobile Health Monitoring</h3>
-              <p>Android application using smartphone camera-based photoplethysmography, FFT heart-rate estimation, and air-quality information for contextual health-risk assessment.</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-art art-two"><span>02 / RESEARCH</span><strong>Eye-Gaze</strong></div>
-            <div class="project-info">
-              <div class="tags"><span>HCI</span><span>Eye Tracking</span><span>Data Analysis</span></div>
-              <h3>Cognitive Load Through Eye Tracking</h3>
-              <p>Exploratory study examining fixation behaviour and other eye-tracking signals during reasoning and reading-comprehension tasks.</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-art art-three"><span>03 / SECURITY</span><strong>Cyber Lab</strong></div>
-            <div class="project-info">
-              <div class="tags"><span>Linux</span><span>Wireshark</span><span>Burp Suite</span></div>
-              <h3>Cybersecurity & Systems Exploration</h3>
-              <p>Hands-on security labs involving network analysis, cryptography, vulnerability testing, and controlled penetration-testing environments.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container">
-        <p class="eyebrow">04 / EXPERIENCE</p>
-        <h2>Learning by <em>doing.</em></h2>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2025</div>
-            <div>
-              <h3>Research Intern</h3>
-              <p class="subtitle">Arun Jaitley National Institute of Financial Management</p>
-              <p>Research internship experience in an interdisciplinary institutional environment.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2026</div>
-            <div>
-              <h3>Programming Tutor</h3>
-              <p class="subtitle">Python & Computer Science</p>
-              <p>Teaching Python fundamentals, programming logic, data structures, and object-oriented programming.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="skills">
-          <h3>Technical Toolkit</h3>
-          <div class="skill-list">
-            <span>Python</span><span>Kotlin</span><span>Android</span>
-            <span>Machine Learning</span><span>Computer Vision</span>
-            <span>Signal Processing</span><span>HCI</span>
-            <span>Linux</span><span>Cybersecurity</span>
-            <span>Data Analysis</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="personal" class="section section-alt">
-      <div class="container">
-        <p class="eyebrow">05 / BEYOND WORK</p>
-        <h2>More than <em>code.</em></h2>
-        <div class="interest-grid">
-          <div class="interest-card"><span>⚽</span><h3>Football</h3><p>Teamwork, discipline and a love for the game.</p></div>
-          <div class="interest-card"><span>✈</span><h3>Travel</h3><p>Exploring landscapes, cultures and new experiences.</p></div>
-          <div class="interest-card"><span>◎</span><h3>Sports Shooting</h3><p>Experience representing Telangana in 10-metre air-rifle shooting.</p></div>
-          <div class="interest-card"><span>✦</span><h3>Curiosity</h3><p>Learning beyond the classroom and exploring new ideas.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <p class="eyebrow">06 / CONTACT</p>
-        <h2>Let's make something <em>meaningful.</em></h2>
-        <p>Interested in research, technology, collaboration or just a conversation? I'd love to connect.</p>
-        <div class="contact-actions">
-          <a href="mailto:YOUR_EMAIL@example.com" class="btn btn-dark">Send an Email ↗</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn ↗</a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub ↗</a>
-        </div>
-        <p class="contact-note">Update the email and social links with your own details before publishing.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Rishab Kumar Chowdhary</span>
-      <span>Designed with purpose.</span>
-      <a href="#home">Back to top ↑</a>
+<header class="header">
+  <nav class="container nav">
+    <a class="logo" href="#home">Rishab<span>.</span></a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
-  </footer>
+  </nav>
+</header>
+
+<main>
+
+<section id="home" class="hero container">
+  <p class="eyebrow">HELLO, I'M RISHAB</p>
+  <h1>Building technology<br>with <em>purpose.</em></h1>
+  <p class="hero-text">
+    I'm Rishab Kumar Chowdhary, a Computer Science graduate from
+    IIIT Delhi with interests in Artificial Intelligence, Machine
+    Learning, Natural Language Processing and Human-Centred Technology.
+  </p>
+  <div class="buttons">
+    <a class="btn primary" href="#projects">Explore My Work ↗</a>
+    <a class="btn secondary" href="Rishab_CV.pdf" download>Download CV ↓</a>
+  </div>
+  <div class="hero-bottom">
+    <span>Computer Science & Engineering</span>
+    <span>AI · Research · Software Development</span>
+  </div>
+</section>
+
+<section id="about" class="section soft">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">01 / ABOUT ME</p>
+      <h2>Curiosity meets<br><em>innovation.</em></h2>
+    </div>
+    <div class="body-copy">
+      <p>
+        I am a Computer Science and Engineering graduate from
+        Indraprastha Institute of Information Technology Delhi.
+        My interests span artificial intelligence, machine learning,
+        deep learning, natural language processing and software systems.
+      </p>
+      <p>
+        I enjoy exploring how intelligent technologies can solve
+        real-world problems. My projects range from smartphone-based
+        health monitoring and face recognition to AI agents, knowledge
+        graphs and computer architecture.
+      </p>
+      <p>
+        I also have research experience in financial NLP and
+        stock forecasting through the DEA-AJNIFM Research Programme.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="container">
+    <p class="eyebrow">02 / EDUCATION</p>
+    <h2>Academic <em>journey.</em></h2>
+
+    <div class="timeline">
+      <article class="timeline-item">
+        <span class="date">2022 — 2026</span>
+        <div>
+          <h3>IIIT Delhi</h3>
+          <p class="subtitle">Bachelor of Technology — Computer Science & Engineering</p>
+          <p>New Delhi, India</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <span class="date">2020 — 2021</span>
+        <div>
+          <h3>Army Public School, Mathura Cantt</h3>
+          <p class="subtitle">Senior Secondary — Class XII, PCM</p>
+          <p>CBSE Board</p>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <span class="date">2018 — 2019</span>
+        <div>
+          <h3>Heritage School, Jammu</h3>
+          <p class="subtitle">Secondary — Class X</p>
+          <p>CBSE Board</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section soft">
+  <div class="container">
+    <p class="eyebrow">03 / RESEARCH EXPERIENCE</p>
+    <h2>Research & <em>experience.</em></h2>
+
+    <div class="experience-card">
+      <div class="experience-heading">
+        <div>
+          <h3>Research Intern — Stock Forecasting & Financial NLP</h3>
+          <p class="subtitle">Arun Jaitley National Institute of Financial Management</p>
+        </div>
+        <span class="date">Jun — Jul 2025</span>
+      </div>
+      <p>
+        Conducted research under the DEA-AJNIFM Research Programme on
+        stock forecasting and investment insights from earnings call
+        transcripts using NLP, deep learning and ontology-based analysis.
+      </p>
+      <p>
+        Applied semantic analysis to extract structured financial insights
+        from unstructured textual data for equity forecasting.
+      </p>
+      <div class="tags">
+        <span>Financial NLP</span>
+        <span>Deep Learning</span>
+        <span>Stock Forecasting</span>
+        <span>Ontology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <p class="eyebrow">04 / SELECTED WORK</p>
+    <h2>Projects & <em>explorations.</em></h2>
+    <p class="section-intro">
+      A selection of my work across AI, machine learning,
+      software engineering and computer systems.
+    </p>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-visual green">
+          <span>01 / HEALTH TECHNOLOGY</span>
+          <strong>AirPulse</strong>
+        </div>
+        <div class="project-content">
+          <p class="project-date">Jan — Apr 2026</p>
+          <h3>AirPulse — Health Risk Assessment App</h3>
+          <p>
+            Built an Android application using camera-based PPG and FFT
+            for heart-rate estimation, achieving approximately 5 BPM
+            accuracy on real users. Integrated AQI APIs and profile
+            information for context-aware risk assessment.
+          </p>
+          <div class="tags">
+            <span>Android</span><span>PPG</span><span>FFT</span><span>AQI</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual lavender">
+          <span>02 / COMPUTER VISION</span>
+          <strong>Face Recognition</strong>
+        </div>
+        <div class="project-content">
+          <p class="project-date">Jan — Apr 2025</p>
+          <h3>Face Recognition System</h3>
+          <p>
+            Developed a one-shot face verification system using
+            Siamese Networks and FaceNet with contrastive and triplet
+            loss. Achieved 90% accuracy and an F1 score of 0.81
+            on a celebrity face dataset.
+          </p>
+          <div class="tags">
+            <span>PyTorch</span><span>FaceNet</span><span>Deep Learning</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual sand">
+          <span>03 / AI PLATFORMS</span>
+          <strong>Agentec</strong>
+        </div>
+        <div class="project-content">
+          <p class="project-date">Jan — Apr 2025</p>
+          <h3>Agentec — AI Agent SaaS Platform</h3>
+          <p>
+            Co-developed a cloud-native platform for no-code
+            deployment and management of AI agents through a
+            conversational interface and role-based dashboard.
+            Included explainable AI widgets and evaluation metrics.
+          </p>
+          <div class="tags">
+            <span>LLMs</span><span>SaaS</span><span>XAI</span><span>Cloud</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual blue">
+          <span>04 / KNOWLEDGE SYSTEMS</span>
+          <strong>Knowledge Graphs</strong>
+        </div>
+        <div class="project-content">
+          <p class="project-date">Jan — Apr 2024</p>
+          <h3>Knowledge Graphs with Large Language Models</h3>
+          <p>
+            Designed an LLM-based knowledge graph querying system
+            using Neo4j, DiffbotGraph Transformer and Gemini API.
+            Explored semantic retrieval to improve complex
+            entity-based queries and response coherence.
+          </p>
+          <div class="tags">
+            <span>Neo4j</span><span>Gemini API</span><span>RAG</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual rose">
+          <span>05 / SOFTWARE ENGINEERING</span>
+          <strong>College ERP</strong>
+        </div>
+        <div class="project-content">
+          <p class="project-date">2023</p>
+          <h3>ERP System for College Administration</h3>
+          <p>
+            Developed a Java-based college ERP system for course
+            registration, timetable management, results viewing
+            and administrative workflows using object-oriented
+            design and the MVC architecture.
+          </p>
+          <div class="tags">
+            <span>Java</span><span>OOP</span><span>MVC</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-visual slate">
+          <span>06 / COMPUTER SYSTEMS</span>
+          <strong>16-bit ISA</strong>
+        </div>
+        <div class="project-content">
+          <p class="project-date">Aug — Dec 2022</p>
+          <h3>Assembler & Simulator for Custom 16-bit ISA</h3>
+          <p>
+            Built an assembler and simulator for a custom 16-bit
+            instruction set with six instruction types, eight
+            registers and 512-byte memory, including floating-point
+            support and memory visualisation.
+          </p>
+          <div class="tags">
+            <span>Assembly</span><span>Architecture</span><span>Simulation</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="section soft">
+  <div class="container">
+    <p class="eyebrow">05 / CONTINUOUS LEARNING</p>
+    <h2>Certifications & <em>courses.</em></h2>
+
+    <div class="timeline">
+      <article class="timeline-item">
+        <span class="date">2025</span>
+        <div>
+          <h3>Self-Driving Cars Specialisation</h3>
+          <p class="subtitle">University of Toronto · Coursera</p>
+          <p>State estimation, localisation, visual perception and motion planning.</p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <span class="date">2024 — 2025</span>
+        <div>
+          <h3>Bloomberg Finance Fundamentals</h3>
+          <p class="subtitle">Bloomberg for Education</p>
+          <p>Corporate finance, financial analysis, valuation and risk management.</p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <span class="date">2024</span>
+        <div>
+          <h3>Bloomberg Market Concepts</h3>
+          <p class="subtitle">Bloomberg for Education</p>
+          <p>Equities, fixed income, currencies, commodities and financial markets.</p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <span class="date">2024</span>
+        <div>
+          <h3>Functional Programming I & II</h3>
+          <p class="subtitle">University of Helsinki</p>
+          <p>Completed both courses, totalling 10 ECTS credits.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <p class="eyebrow">06 / TECHNICAL TOOLKIT</p>
+    <h2>Skills & <em>technologies.</em></h2>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <div class="tags">
+          <span>Python</span><span>Java</span><span>C</span>
+          <span>C++</span><span>SPARQL</span><span>Haskell</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Artificial Intelligence</h3>
+        <div class="tags">
+          <span>PyTorch</span><span>Scikit-learn</span>
+          <span>Deep Learning</span><span>NLP</span>
+          <span>FaceNet</span><span>Siamese Networks</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools & Databases</h3>
+        <div class="tags">
+          <span>Neo4j</span><span>Git</span><span>GitHub</span>
+          <span>Gemini API</span><span>DiffbotGraph Transformer</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Specialised Areas</h3>
+        <div class="tags">
+          <span>CARLA</span><span>Computer Vision</span>
+          <span>Motion Planning</span><span>Financial Forecasting</span>
+          <span>Equity Research</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section soft contact">
+  <div class="container">
+    <p class="eyebrow">07 / GET IN TOUCH</p>
+    <h2>Let's build something <em>meaningful.</em></h2>
+    <p>
+      I'm interested in connecting with people working in
+      artificial intelligence, research and innovative technology.
+    </p>
+    <div class="buttons center">
+      <a class="btn primary" href="mailto:topgunrishab@gmail.com">
+        Email Me ↗
+      </a>
+      <a class="btn secondary" href="Rishab_CV.pdf" download>
+        Download My CV ↓
+      </a>
+    </div>
+    <p class="email-text">topgunrishab@gmail.com</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>© <span id="year"></span> Rishab Kumar Chowdhary</span>
+    <span>Made with curiosity & purpose.</span>
+    <a href="#home">Back to top ↑</a>
+  </div>
+</footer>
+
 </body>
 </html>
